@@ -2,8 +2,6 @@ backend:
   name: github
   repo: sergehuber/emedswiss-hugo-test  # Replace with your GitHub repo
   branch: main
-  auth:
-    client_id: Ov23liRva1YfHnIKAcyc
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
