@@ -1,0 +1,39 @@
+# Hugo build artifacts
+/public/
+/resources/_gen/
+/hugo_stats.json
+
+# Hugo config overrides (if any)
+hugo.toml
+hugo.yaml
+hugo.json
+
+# Netlify/Decap CMS admin folder (if you're using Netlify/Decap CMS)
+# Add this only if you're using custom builds and don't want to commit these files.
+# If you're not using Git-based backend for Decap CMS, you can include 'admin' folder in your repo.
+!/static/admin/config.yml
+/static/admin/
+
+# Media uploads (handled by Decap CMS)
+# This assumes that you store uploads in a folder under /static/uploads.
+/static/uploads/
+
+# Temporary files
+.DS_Store
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.cache/
+.tmp/
+
+# Hugo cache
+/cache/
+hugo_cache/
+
+# System files
+.idea/
+/.vscode/
+Thumbs.db
+*.swp
+*.swo
+*~
