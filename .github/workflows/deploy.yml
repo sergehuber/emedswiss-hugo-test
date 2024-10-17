@@ -1,12 +1,12 @@
-name: Hugo CI/CD
+name: Deploy Hugo site
 
 on:
   push:
     branches:
-      - main  # Trigger action on pushes to the main branch
+      - main  # Déclenche l'action à chaque push sur la branche principale
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,12 +18,14 @@ jobs:
         with:
           hugo-version: 'latest'
 
-      - name: Build site
+      - name: Install Hugo Modules
+        run: hugo mod get all
+
+      - name: Build Hugo site
         run: hugo --minify
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./public
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  # Répertoire de sortie généré par Hugo
