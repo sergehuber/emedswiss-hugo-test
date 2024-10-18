@@ -2,8 +2,8 @@
 title: Contact
 featured_image: ""
 omit_header_text: true
-description: We'd love to hear from you. Please contact us if you have any
-  questions. Testing.
+description: |
+  We'd love to hear from you. Please contact us if you have any questions. 
 type: page
 menu: main
 date: 2024-10-18T10:36:00.000Z
