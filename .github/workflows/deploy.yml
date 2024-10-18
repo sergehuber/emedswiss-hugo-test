@@ -8,7 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+        TZ: UTC  # Ensure the build environment uses UTC
+  
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
