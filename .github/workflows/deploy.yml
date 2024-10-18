@@ -41,7 +41,7 @@ jobs:
         run: hugo mod get all
 
       - name: Build Hugo site
-        run: hugo --minify
+        run: hugo --minify --logLevel=DEBUG -F
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
