@@ -1,0 +1,78 @@
+backend:
+  name: github
+  repo: sergehuber/emedswiss-hugo-test  # Replace with your GitHub repo
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+publish_mode: editorial_workflow
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/en/post"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages"
+    folder: "content/en"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "french_blog"
+    label: "Blog (French)"
+    folder: "content/fr/post"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "french_pages"
+    label: "Pages (French)"
+    folder: "content/fr"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "config"
+    label: "Config"
+    files:
+      - label: "Site Configuration"
+        name: "config"
+        file: "config.toml"
+        fields:
+          - { label: "Base URL", name: "baseURL", widget: "string" }
+          - { label: "Language Code", name: "languageCode", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Theme", name: "theme", widget: "hidden", default: "ananke" }
+          - label: "Params"
+            name: "params"
+            widget: "object"
+            fields:
+              - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+              - { label: "Background Color", name: "background_color_class", widget: "string", required: false }
+              - { label: "Recent Posts Number", name: "recent_posts_number", widget: "number", required: false }

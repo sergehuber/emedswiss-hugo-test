@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EmedSwiss Site de test Hugo on EmedSwiss Fr</title><link>https://sergehuber.github.io/emedswiss-hugo-test/fr/</link><description>Recent content in EmedSwiss Site de test Hugo on EmedSwiss Fr</description><generator>Hugo</generator><language>fr</language><lastBuildDate>Sun, 09 Apr 2017 10:58:08 -0400</lastBuildDate><atom:link href="https://sergehuber.github.io/emedswiss-hugo-test/fr/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapitre I: La grande halle</title><link>https://sergehuber.github.io/emedswiss-hugo-test/fr/post/chapter-1/</link><pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate><guid>https://sergehuber.github.io/emedswiss-hugo-test/fr/post/chapter-1/</guid><description>&lt;p>Généralement, on utilise un texte en faux latin (le texte ne veut rien dire, il a été modifié), le Lorem ipsum ou Lipsum, qui permet donc de faire office de texte d&amp;rsquo;attente. L&amp;rsquo;avantage de le mettre en latin est que l&amp;rsquo;opérateur sait au premier coup d&amp;rsquo;oeil que la page contenant ces lignes n&amp;rsquo;est pas valide, et surtout l&amp;rsquo;attention du client n&amp;rsquo;est pas dérangée par le contenu, il demeure concentré seulement sur l&amp;rsquo;aspect graphique.&lt;/p></description></item><item><title>Contact</title><link>https://sergehuber.github.io/emedswiss-hugo-test/fr/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sergehuber.github.io/emedswiss-hugo-test/fr/contact/</guid><description>&lt;p>Ceci est la page de contact en Français.&lt;/p>
+&lt;p>This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the shortcode to make it work. Check out &lt;a href="https://formspree.io/">Formspree&lt;/a> for a simple, free form service.&lt;/p>
+
+
+
+&lt;form class="black-80 sans-serif" accept-charset="UTF-8" action="https://example.com" method="POST" role="form">
+
+ &lt;label class="f6 b db mb1 mt3 sans-serif mid-gray" for="name">Votre nom&lt;/label>
+ &lt;input type="text" id="name" name="name" class="w-100 f5 pv3 ph3 bg-light-gray bn" required placeholder=" " aria-labelledby="name"/>
+
+ &lt;label class="f6 b db mb1 mt3 sans-serif mid-gray" for="email">Adresse e-mail&lt;/label>
+ &lt;input type="email" id="email" name="email" class="w-100 f5 pv3 ph3 bg-light-gray bn" required placeholder=" " aria-labelledby="email"/>
+ &lt;div class="requirements f6 gray glow i ph3 overflow-hidden">
+ Une adresse e-mail est requise.
+ &lt;/div>
+
+ &lt;label class="f6 b db mb1 mt3 sans-serif mid-gray" for="message">Message&lt;/label>
+ &lt;textarea id="message" name="message" class="w-100 f5 pv3 ph3 bg-light-gray bn h4" aria-labelledby="message">&lt;/textarea>
+
+ &lt;input class="db w-100 mv2 white pa3 bn hover-shadow hover-bg-black bg-animate bg-black" type="submit" value="Envoyer" />
+
+&lt;/form></description></item></channel></rss>
