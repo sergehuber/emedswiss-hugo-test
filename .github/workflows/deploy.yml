@@ -32,6 +32,9 @@ jobs:
       - name: Clear Hugo cache
         run: hugo --gc --minify
 
+      - name: Clear Hugo destination directory
+        run: hugo --cleanDestinationDir
+
       - name: Install Hugo Modules
         run: hugo mod get all
 
